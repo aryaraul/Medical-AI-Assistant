@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prescription</title>
+
+<link rel="stylesheet" href="print.css">
+
+</head>
+
+<body>
+
+<div class="prescription">
+
+<div class="header">
+
+<h1>🏥 City Care Hospital</h1>
+
+<p>Miraroad, Thane</p>
+
+<p>+91 9876543210</p>
+
+</div>
+
+<hr>
+
+<div class="doctor">
+
+<h3>Dr. Yashvi Raul</h3>
+
+<p>MBBS, MD (General Medicine)</p>
+
+<p>Registration No : MMC14122012</p>
+
+</div>
+
+<hr>
+
+<div class="patient">
+
+<p><b>Patient Name :</b> <span id="pName"></span></p>
+
+<p><b>Age :</b> <span id="pAge"></span></p>
+
+<p><b>Gender :</b> <span id="pGender"></span></p>
+
+<p><b>Date :</b> <span id="date"></span></p>
+
+</div>
+
+<hr>
+
+<h3>Chief Complaint</h3>
+
+<p id="chiefComplaint"></p>
+
+<h3>Symptoms</h3>
+
+<ul id="symptoms"></ul>
+
+<h3>Medical History</h3>
+
+<p id="history"></p>
+
+<h3>Clinical Observations</h3>
+
+<p id="observations"></p>
+
+<h3>Diagnosis</h3>
+
+<p id="diagnosis"></p>
+
+<h3>Clinical Summary</h3>
+
+<div class="summary-box">
+    <p id="clinicalSummary"></p>
+</div>
+
+<h3>Medicines</h3>
+
+<table border="1" width="100%">
+
+<thead>
+
+<tr>
+
+<th>Medicine</th>
+
+<th>Dosage</th>
+
+<th>Frequency</th>
+
+<th>Duration</th>
+
+</tr>
+
+</thead>
+
+<tbody id="medicineTable"></tbody>
+
+</table>
+
+<h3>Advice</h3>
+
+<ul id="adviceList"></ul>
+
+<br><br>
+
+<div class="signature">
+
+    <div class="doctor-sign">
+
+        _____________________<br>
+
+        <strong>Dr. Yashvi Raul</strong><br>
+        MBBS, MD (General Medicine)<br>
+        Registration No : MMC14122012
+
+    </div>
+
+</div>
+
+<div class="buttons">
+
+    <button onclick="window.print()">
+        🖨 Print Prescription
+    </button>
+
+</div>
+
+<script src="print.js"></script>
+
+</body>
+</html>
